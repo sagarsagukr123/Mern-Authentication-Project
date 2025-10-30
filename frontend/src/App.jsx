@@ -91,6 +91,8 @@ function App() {
 					}
 				/>
         <Route path="/verify-email" element={<EmailVerificationPage/>}/>
+		//catch all route to redirect based on auth status
+		<Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/login"} replace />} />	
       </Routes>
       </div>
    

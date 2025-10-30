@@ -41,6 +41,9 @@ const SignUpPage = () => {
 						icon={User}
 						type='text'
 						placeholder='Full Name'
+						name='signupnam'
+						className='btn btn-primary'
+						id='signup'
 						value={name}
                         onChange={(e)=> setName(e.target.value)}
 						
@@ -48,6 +51,8 @@ const SignUpPage = () => {
 					<Input
 						icon={Mail}
 						type='email'
+						name='emailnam'
+						id='verify'
 						placeholder='Email Address'
 						value={email}
                         onChange={(e)=> setEmail(e.target.value)}
@@ -57,6 +62,7 @@ const SignUpPage = () => {
 						icon={Lock}
 						type='password'
 						placeholder='Password'
+						id='password'
 						value={password}
                         onChange={(e)=> setPassword(e.target.value)}
 						
